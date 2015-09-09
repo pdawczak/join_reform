@@ -43,3 +43,7 @@ group :development, :test do
   gem 'spring'
 end
 
+gem "reform"
+gem "simple_form"
+
+gem "twitter-bootstrap-rails"
