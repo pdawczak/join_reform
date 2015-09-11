@@ -1,0 +1,9 @@
+<%- model_class = User -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => model_class.model_name.human.titleize %></h1>
+</div>
+
+<%= simple_form_for @form, as: :user, url: user_path(@user), html: { class: 'form-horizontal' } do |f| %>
+  <%= f.input :email %>
+  <%= f.button :submit, "Update" %>
+<% end %>
